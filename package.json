@@ -1,0 +1,25 @@
+{
+  "name": "grunt-mocha-chai-sinon",
+  "description": "MochaJS + ChaiJS + SinonJS Test Runner",
+  "version": "0.0.1",
+  "author": "Marco Pegoraro <marco.pegoraro@gmail.com>",
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thepeg/grunt-mocha-chai-sinon"
+  },
+  "keywords": [
+    "test",
+    "grunt",
+    "mocha",
+    "chai",
+    "sinon",
+    "bdd"
+  ],
+  "dependencies": {
+    "mocha": "~1.14.0",
+    "chai": "~1.8.1",
+    "sinon": "~1.7.3"
+  },
+  "devDependencies": {}
+}
