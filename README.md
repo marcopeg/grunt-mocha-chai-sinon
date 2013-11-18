@@ -1,7 +1,17 @@
-grunt-mocha-chai-sinon
-======================
+GruntJS + MochaJS + ChaiJS + SinonJS
+====================================
 
 > Simple test runner for [_GruntJS_][1] using [_MochaJS_][2] as test framework, [_ChaiJS_][3] as assertion library for [BDD][4] and [TDD][5] and [_SinonJS_][6] as spyes/stubs/mocks utility library.
+
+
+## Install
+
+The quickest way to install is to use _npm package manager_.  
+[Check our page on NPM](https://npmjs.org/package/grunt-mocha-chai-sinon)
+
+```
+npm install grunt-mocha-chai-sinon --save-dev
+```
 
 
 ## Gruntfile Example
