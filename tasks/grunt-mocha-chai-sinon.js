@@ -6,12 +6,13 @@
 
 var capture = require('../lib/capture');
 
-require('blanket')({
-	// Only files that match the pattern will be instrumented
-	pattern: '/src/'
-});
-
 module.exports = function(grunt) {
+
+	// try to configure a coverage filter
+	require('blanket')({
+		// Only files that match the pattern will be instrumented
+		pattern: grunt.config.data['grunt-mocha-chai-sinon'].options.coverageFilter || '/src/'
+	});
 	
 	grunt.registerMultiTask('grunt-mocha-chai-sinon', 'MochaJS + ChaiJS + SinonJS test runner', function() {
 

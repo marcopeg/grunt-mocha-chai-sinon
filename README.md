@@ -37,6 +37,9 @@ module.exports = function(grunt) {
 ## Test Coverage
 
     'grunt-mocha-chai-sinon': {
+        options: {
+            coverageFilter: '/foo/foo1/'
+        },
         build: {
             src: ['./specs/**/*.spec.js'],
             options: {
