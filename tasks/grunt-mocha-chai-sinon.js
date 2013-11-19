@@ -8,11 +8,29 @@ var capture = require('../lib/capture');
 
 module.exports = function(grunt) {
 
-	// try to configure a coverage filter
+
+
+	/**
+	 * Try to configure a coverage filter using the coverage specification from
+	 * the Grunt configuration.
+	 *
+	 * "/project-folder/src/" is used as default filter for test coverage
+	 */
+
+	var filterProjectSrc = process.cwd();
+	filterProjectSrc = filterProjectSrc.substr(filterProjectSrc.lastIndexOf('/'), filterProjectSrc.length) + '/src/';
+
 	require('blanket')({
-		// Only files that match the pattern will be instrumented
-		pattern: grunt.config.data['grunt-mocha-chai-sinon'].options.coverageFilter || '/src/'
+		pattern: grunt.config.data['grunt-mocha-chai-sinon'].coverage.options.filter || filterProjectSrc
 	});
+
+
+
+
+
+	/**
+	 * Grunt Task
+	 */
 	
 	grunt.registerMultiTask('grunt-mocha-chai-sinon', 'MochaJS + ChaiJS + SinonJS test runner', function() {
 
@@ -33,12 +51,6 @@ module.exports = function(grunt) {
 			mocha.addFile(file);
 		});
 
-
-		/*
-		mocha.run(function (errCount) {
-			done(errCount === 0);
-		});
-		*/
 
 		capture(options.captureFile, options.quiet, function(complete) {
 
