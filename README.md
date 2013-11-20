@@ -12,7 +12,7 @@ module.exports = function(grunt) {
     
     // configure tasks
     grunt.initConfig({
-        'grunt-mocha-chai-sinon': {
+        'mocha-chai-sinon': {
             build: {
                 src: ['./specs/**/*.spec.js'],
 	    	    options: {
@@ -28,7 +28,7 @@ module.exports = function(grunt) {
     
     // register tasks for execution chain
     grunt.registerTask('test', [
-		'grunt-mocha-chai-sinon'
+		'mocha-chai-sinon'
 	]);
 };	
 ```
@@ -38,10 +38,10 @@ module.exports = function(grunt) {
 
 Test coverage support is provided by [node-jscoverage](https://github.com/visionmedia/node-jscoverage) while source code is _coverage enabled_ with [BlancketJS](http://blanketjs.org/).
 
-In order to activate test coverage you need to create a new configuration for the `grunt-mocha-chai-sinon` task and name it `coverage`.  
+In order to activate test coverage you need to create a new configuration for the `mocha-chai-sinon` task and name it `coverage`.  
 **The name matter!**
 
-    'grunt-mocha-chai-sinon': {
+    'mocha-chai-sinon': {
         build: {
             src: ['./specs/**/*.spec.js'],
             options: {
@@ -61,7 +61,7 @@ In order to activate test coverage you need to create a new configuration for th
         }
     }
 
-By default `grunt-mocha-chai-sinon` add test coverage support to all loaded files who match the `/project-folder/src/` path but you can configure it with the `coverage.options.filter` option.
+By default `mocha-chai-sinon` add test coverage support to all loaded files who match the `/project-folder/src/` path but you can configure it with the `coverage.options.filter` option.
 
 
 

@@ -21,7 +21,7 @@ module.exports = function(grunt) {
 	filterProjectSrc = filterProjectSrc.substr(filterProjectSrc.lastIndexOf('/'), filterProjectSrc.length) + '/src/';
 
 	require('blanket')({
-		pattern: grunt.config.data['grunt-mocha-chai-sinon'].coverage.options.filter || filterProjectSrc
+		pattern: grunt.config.data['mocha-chai-sinon'].coverage.options.filter || filterProjectSrc
 	});
 
 
@@ -32,7 +32,7 @@ module.exports = function(grunt) {
 	 * Grunt Task
 	 */
 	
-	grunt.registerMultiTask('grunt-mocha-chai-sinon', 'MochaJS + ChaiJS + SinonJS test runner', function() {
+	grunt.registerMultiTask('mocha-chai-sinon', 'MochaJS + ChaiJS + SinonJS test runner', function() {
 
 		var MochaJS = require('mocha'),
 			ChaiJS = require('chai'),
