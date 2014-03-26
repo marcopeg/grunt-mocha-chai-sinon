@@ -21,7 +21,7 @@ module.exports = function(grunt) {
 	filterProjectSrc = filterProjectSrc.substr(filterProjectSrc.lastIndexOf('/'), filterProjectSrc.length) + '/src/';
 
 	require('blanket')({
-		pattern: grunt.config.data['mocha-chai-sinon'].coverage.options.filter || filterProjectSrc
+		pattern: grunt.config.data['mocha-chai-sinon'].coverage ? grunt.config.data['mocha-chai-sinon'].coverage.options.filter : filterProjectSrc
 	});
 
 
