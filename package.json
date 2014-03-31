@@ -1,7 +1,7 @@
 {
 	"name": "grunt-mocha-chai-sinon",
 	"description": "MochaJS + ChaiJS + SinonJS Test Runner",
-	"version": "0.0.7",
+	"version": "0.0.8",
 	"author": {
 		"name": "Marco Pegoraro",
 		"email": "marco.pegoraro@gmail.com"
