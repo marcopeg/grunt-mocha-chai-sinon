@@ -1,0 +1,33 @@
+{
+  "name": "grunt-mocha-chai-sinon-example",
+  "description": "MochaJS + ChaiJS + SinonJS Test Runner - Example Project",
+  "version": "0.0.1",
+  "author": {
+    "name": "Marco Pegoraro",
+    "email": "marco.pegoraro@gmail.com",
+    "url": "http://marcopeg.github.com"
+  },
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thepeg/grunt-mocha-chai-sinon"
+  },
+  "keywords": [
+    "example",
+    "unit test",
+    "gruntjs",
+    "mochajs",
+    "chaijs",
+    "sinonjs"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thepeg/grunt-mocha-chai-sinon/issues"
+  },
+  "homepage": "https://github.com/thepeg/grunt-mocha-chai-sinon",
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-mocha-chai-sinon": "~0.0.8",
+    "grunt-contrib-watch": "~0.6.1"
+  }
+}
