@@ -69,11 +69,20 @@ module.exports = function(grunt) {
 			}
 
 		}, function(err, errCount) {
+
 			if (err) {
+
+				// logs error
+				grunt.log.error(err.stack);
+
 				done(false);
+
 			} else {
+
 				done(errCount === 0)
+
 			}
+
 		});
 
 	});
